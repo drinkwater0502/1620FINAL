@@ -1,4 +1,4 @@
-* {
+body {
     padding: 0;
     margin: 0;
     font-family: 'RocknRoll One', sans-serif;
@@ -27,7 +27,8 @@ header {
 h1 {
     text-align: center;
     color: white;
-    background-color: #31748f
+    background-color: #31748f;
+    font-size: 2.5rem
 }
 
 ul {
@@ -49,10 +50,77 @@ h2 {
     text-align: center;
 }
 
+#shopsection {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        'one'
+        'two'
+        'three'
+        'four';
+}
+
+#shopitem1 {
+    grid-area: one;
+
+}
+
+#shopitem2 {
+    grid-area: two;
+
+}
+
+#shopitem3 {
+    grid-area: three;
+
+}
+
+#shopitem4 {
+    grid-area: four;
+
+}
+
+#shopitem1,
+#shopitem2,
+#shopitem3,
+#shopitem4 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
 .cart {
     grid-area: c;
 }
 
+main > .wrapper > .cart {
+    background-color: #e0def4;
+}
+
+h3 {
+    text-align: center;
+}
+
+.cart-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 footer {
     grid-area: f;
+    background-color: #31748f;
+    text-align: center;
+}
+
+@media screen and (min-width: 640px) {
+    #shopsection {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            'one two'
+            'three four';
+    }
 }
