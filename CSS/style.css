@@ -114,6 +114,11 @@ footer {
     text-align: center;
 }
 
+img {
+    align-self: center;
+    width: 150px;
+}
+
 @media screen and (min-width: 640px) {
     #shopsection {
         display: grid;
@@ -122,5 +127,10 @@ footer {
         grid-template-areas: 
             'one two'
             'three four';
+    }
+
+    img {
+        align-self: center;
+        width: 200px;
     }
 }
