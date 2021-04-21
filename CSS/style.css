@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'RocknRoll One', sans-serif;
+    background-color: #9ccfd8;
+}
+
+h1 {
+    font-family: 'Indie Flower', cursive;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        'h'
+        'm'
+        'c'
+        'f';
+}
+
+header {
+    grid-area: h;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    background-color: #31748f
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+}
+
+li {
+    margin: 5px
+}
+
+main {
+    grid-area: m;
+}
+
+h2 {
+    text-align: center;
+}
+
+.cart {
+    grid-area: c;
+}
+
+footer {
+    grid-area: f;
+}
