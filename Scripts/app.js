@@ -8,7 +8,7 @@ function addimages(list) {
     }
 }
 
-
+// couldnt figure out the last section :x
 
 const albums = [
     { name: "Album 1", price: 12.99, inCart: false }, 
